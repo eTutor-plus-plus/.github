@@ -17,3 +17,6 @@ The pipelines are generally triggered by a push or a resolved pull request on th
 Images are tagged according to the schema etutorplusplus/<repository>:<branch>-<date>, where <repository> refers to the name of the respective services' repository, <branch> to the branch (so main/master), and <date> to the date on which the image has been created.
 
 The [deploy repository](https://github.com/eTutor-plus-plus/local-deploy) contains the docker-compose configuration to deploy the whole system based on the automatically created images.
+
+### Notes for Developers
+Development on a service is best realized using the abovementioned deployment utility. This way you can easily deploy all serviced required to test interactions of the service you are developing on with the whole system.
