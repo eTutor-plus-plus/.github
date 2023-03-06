@@ -20,3 +20,6 @@ The [deploy repository](https://github.com/eTutor-plus-plus/local-deploy) contai
 
 ### Notes for Developers
 Development on a service is best realized using the abovementioned deployment utility. This way you can easily deploy all services required, and test interactions of the service you are developing on with the whole system.
+
+## Documentation
+In addition to the readme-file in each repostiory, the whole system is documented in a dedicated [wiki(coming soon)]().
