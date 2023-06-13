@@ -17,6 +17,8 @@ The pipelines generically build the services and a Docker image containing the a
 The pipelines are generally triggered by a push or a resolved pull request on the main/master branch of a service.
 Images are tagged according to the schema *etutorplusplus/repository:branch-date*, where *repository* refers to the name of the respective services' repository, *branch* to the branch (so main/master), and *date* to the date on which the image has been created.
 
+As part of the pipeline, the generated jars will also be uploaded as artifacts and can be accessed by the respective workflow on Github.
+
 The [deploy repository](https://github.com/eTutor-plus-plus/local-deploy) contains the docker-compose configuration to deploy the whole system based on the automatically created images.
 
 ### Notes for Developers
