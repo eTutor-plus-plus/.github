@@ -5,7 +5,7 @@ The system comprises different services, below is a simple architecture diagram 
 
 Detailed information on the services can be found in the corresponding repository.
 
-![gesamtarchitektur drawio](https://github.com/eTutor-plus-plus/.github/assets/52571862/57a40923-c183-4720-9e5f-2a0eac593c1d)
+![gesamtarchitektur drawio](https://github.com/eTutor-plus-plus/.github/assets/52571862/cc01fb92-077b-4322-aa7f-5b386ebba702)
 
 For further information, do not hesitate to contact kschuetz@dke.uni-linz.ac.at
 
