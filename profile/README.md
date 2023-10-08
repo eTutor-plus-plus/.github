@@ -26,3 +26,9 @@ Development on a service is best realized using the abovementioned deployment ut
 
 ## Documentation
 In addition to the readme-file in each repostiory, the whole system is documented in a dedicated [wiki(coming soon)]().
+
+## Implementing an expert module (WIP)
+There is a tutorial on how to implement an expert module into the [dke-dispatcher]() and integrate it into the [platform]().
+The tutorial uses a simple expert module for guessing numbers as an example, which we call binary-search: tutors are able to create a binary-search task in the UI and students's can submit a number for evaluation.
+The module returns wheter the submitted number is smaller than, equal, or greater than the searched number.
+
