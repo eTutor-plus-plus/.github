@@ -1,34 +1,30 @@
-# eTutor-plus-plus
+# eTutor
 
-An interactice, adaptive learning platform based on individual achievements of learning goals.
-The system comprises different services, below is a simple architecture diagram highlighting the connections of the different services, which can all be found in the respective repositories of this organization.
+An interactice learning platform. The system comprises different services, below is a simple architecture diagram highlighting the connections of the different services, which can all be found in the respective repositories of this organization.
 
 Detailed information on the services can be found in the corresponding repository.
 
-![gesamtarchitektur drawio](https://github.com/eTutor-plus-plus/.github/assets/52571862/cc01fb92-077b-4322-aa7f-5b386ebba702)
+![Architecture](etutor-architektur.svg)
 
-For further information, do not hesitate to contact kschuetz@dke.uni-linz.ac.at
+## Documentation
 
+You can find the documentation in the corresponding repositories. [Here](REPOS.md) you can find a short description of the repositories.
+
+## Implementing a Task-App
+
+There is a tutorial on how to implement a task-app and integrate it into the [Task-Administration UI](https://github.com/eTutor-plus-plus/task-administration-ui).
+
+The sample implementation for a task-app can be found in the repository [Task-App Binary Search](https://github.com/eTutor-plus-plus/task-app-binary-search). This sample task-app was implemented in Java. However, it is also possible to develop the task app in any other programming language. The only requirement is that the task-app provides the RESTful interfaces specified [here](https://etutor-plus-plus.github.io/task-app-starter/api.html).
 
 ## Continuous Integration
 
 Every service of the system is equipped with a CI-Pipeline based on Github Actions. 
-The pipelines generically build the services and a Docker image containing the application, and push those images to the Docker Hub [repository](https://hub.docker.com/repositories/etutorplusplus).
-The pipelines are generally triggered by a push or a resolved pull request on the main/master branch of a service.
-Images are tagged according to the schema *etutorplusplus/repository:branch-date*, where *repository* refers to the name of the respective services' repository, *branch* to the branch (so main/master), and *date* to the date on which the image has been created.
+The pipelines generically build the services and a Docker image containing the application, and push those images to the Docker Hub [repository](https://hub.docker.com/repositories/etutorplusplus). The pipelines are generally triggered by a push or a resolved pull request on the main branch of a service. Images are tagged according to the schema *etutorplusplus/repository:version*, where *repository* refers to the name of the respective services' repository, *version* to the branch and/or the released version and/or the Commit-Hash on which the image has been created.
 
 As part of the pipeline, the generated jars will also be uploaded as artifacts and can be accessed by the respective workflow on Github.
 
-The [deploy repository](https://github.com/eTutor-plus-plus/local-deploy) contains the docker-compose configuration to deploy the whole system based on the automatically created images.
+The [deploy repository](https://github.com/eTutor-plus-plus/local-deploy) contains the docker-compose configuration to deploy the whole system based on the automatically created images for development (only available for internal users).
 
 ### Notes for Developers
+
 Development on a service is best realized using the abovementioned deployment utility. This way you can easily deploy all services required, and test interactions of the service you are developing on with the whole system.
-
-## Documentation
-In addition to the readme-file in each repostiory, the whole system is documented in a dedicated [wiki(coming soon)]().
-
-## Implementing an expert module (WIP)
-There is a tutorial on how to implement an expert module into the [dke-dispatcher]() and integrate it into the [platform]().
-The tutorial uses a simple expert module for guessing numbers as an example, which we call binary-search: tutors are able to create a binary-search task in the UI and students's can submit a number for evaluation.
-The module returns wheter the submitted number is smaller than, equal, or greater than the searched number.
-
