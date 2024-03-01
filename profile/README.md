@@ -4,11 +4,11 @@ An interactice learning platform. The system comprises different services, below
 
 Detailed information on the services can be found in the corresponding repository.
 
-![Architecture](etutor-architektur.svg)
+![Architecture](https://github.com/eTutor-plus-plus/.github/blob/main/profile/etutor-architektur.svg)
 
 ## Documentation
 
-You can find the documentation in the corresponding repositories. [Here](REPOS.md) you can find a short description of the repositories.
+You can find the documentation in the corresponding repositories. [Here](https://github.com/eTutor-plus-plus/.github/blob/main/profile/REPOS.md) you can find a short description of the repositories.
 
 ## Implementing a Task-App
 
